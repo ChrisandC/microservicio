@@ -1,0 +1,43 @@
+---------------------------------------------------------------------------------------
+esta es la pequeña base de datos que hice con xampp en mysql
+
+
+
+
+
+
+
+CREATE TABLE `cliente` (
+  `id` int(11) AUTO_INCREMENT PRIMARY KEY,
+  `nombres` varchar(150) NOT NULL,
+  `apellidos` varchar(150) NOT NULL,
+  `dni` varchar(8) NOT NULL,
+  `direccion` varchar(244) NOT NULL,
+  `telefono` varchar(9) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+ INSERT INTO `cliente` (`id`,`nombres`, `apellidos`, `dni`, `direccion`, `telefono`) VALUES
+('1','Chris Andersson', 'Cespedes Soplin', '73139801', 'Independencia tahuantinsuyo', '950310477'),
+('2','Maria Jose', 'Mendoza Ramos', '73138899','Chosica Lurigancho', '997541648');
+
+
+
+
+CREATE TABLE `usuarios` (
+  `idusuario` int(11) AUTO_INCREMENT PRIMARY KEY,
+  `nombre` varchar(150) NOT NULL,
+  `apellido` varchar(150) NOT NULL,
+  `dni` varchar(8) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+ INSERT INTO `usuarios` (`idusuario`,`nombre`, `apellido`, `dni`, `username`, `password`) VALUES
+('001','Chris Andersson', 'Cespedes Soplin', '73139801', 'chrisand001', 'hola001'),
+('002','Maria Jose', 'Mendoza Ramos', '73138899','mariasjose002', 'holaquehace002');
+
+
+
+
+
+
